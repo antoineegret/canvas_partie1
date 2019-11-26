@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" width="500" height="500">
+        <p>Désolé, votre navigateur ne supporte pas Canvas. Mettez-vous à jour</p>
+    </canvas>
+    
+    <script>
+    var canvas  = document.querySelector('#canvas');
+    var context = canvas.getContext('2d');
+    context.fillStyle = "gold";
+    context.fillRect(200, 200, 100, 120);
+    context.fillStyle = "black";
+    context.fillRect(220, 230, 20, 20);
+    context.fillStyle = "black";
+    context.fillRect(265, 230, 20, 20);
+    context.fillStyle = "black";
+    context.fillRect(235, 280, 30, 40);
+    
+
+
+
+context.beginPath();
+context.moveTo(200, 200);
+context.lineTo(300, 200);
+context.lineTo(250, 125);
+
+context.fillStyle = 'red'; //Nuance de bleu
+context.fill();
+context.closePath();
+
+
+
+    </script>
+</body>
+</html>
